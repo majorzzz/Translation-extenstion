@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingaTrans - Premium Translator</title>
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">A</div>
+                <h1>LingaTrans</h1>
+            </div>
+            <div class="badge">PRO</div>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <label for="source-text">Enter text to translate</label>
+                <textarea id="source-text" placeholder="Type or paste text here..."></textarea>
+            </div>
+
+            <div class="controls">
+                <select id="target-lang">
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                    <option value="zh-CN">Chinese (Simplified)</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="hi">Hindi</option>
+                    <option value="id">Indonesian</option>
+                    <option value="it">Italian</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="pt">Portuguese</option>
+                    <option value="ru">Russian</option>
+                    <option value="es">Spanish</option>
+                    <option value="tr">Turkish</option>
+                    <option value="ur">Urdu</option>
+                    <option value="vi">Vietnamese</option>
+                    <option value="bn">Bengali</option>
+                    <option value="pa">Punjabi</option>
+                    <option value="nl">Dutch</option>
+                    <option value="pl">Polish</option>
+                </select>
+                <button id="translate-btn">Translate Now</button>
+            </div>
+
+            <div class="result-group">
+                <label>Translation Result</label>
+                <div id="result-box" class="result-box">
+                    <span class="placeholder">Your translation will appear here...</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 LingaTrans Studio</p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
